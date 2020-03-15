@@ -1,19 +1,125 @@
 html {
-    box-sizing: border-box;
-    font-size:62.5%; /**reset para REMS - 62.5% = 10px de 16px **/
+  box-sizing: border-box;
+  font-size:62.5%; /**reset para REMS - 62.5% = 10px de 16px **/
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  margin:0; /** porque no funciono el normalize **/
+  line-height: 2;
+}
+
+.contenedor{
+  width: 95%;
+  max-width: 120rem;/** 1200 px **/
+  margin: 0 auto;
+}
+h1{
+  font-size: 3.8rem;
+}
+.seccion {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+img{
+  max-width: 100%;
+}
+  .fw-300{
+    font-weight: 300;
+    text-align: center;
   }
   
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  .centrar-texto{
+      text-align: center;
+}
+.site-header{
+  background-color: #1E5799;
+  padding: 1rem 0 3rem 0;
+
+}
+.site-header.inicio{
+  background-image: url(../imagenes/transformacion.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 20vh;
+  min-height: 40rem;
+}
+.contenido-header{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+}
+@media (min-width: 768px) {
+  .contenedor-anuncios{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   
-  body {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.6rem;
-    margin:0; /** porque no funciono el normalize **/
-    line-height: 2;
+   }
   }
-/* globales */
-  img {
-      max-width: 100%;
+  .anuncio{
+      border: 1px solid #B5B5B5;
+      background-color: #3f4c6b;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  
+  .contenido-anuncio{
+    padding: 2rem;
   }
+
+@media (min-width: 768px) {
+  .contenido-header{
+    text-align:right;
+  }
+.navegacion a{
+    color: #1E5799;
+    text-decoration: none;
+    font-size: 2.2rem; /** va ser igual a 18px*/
+    display:block;
+ }
+}
+  @media (min-width: 768px) {
+    .navegacion a{
+      display: inline-block;
+      font-size: 1.8rem;
+      margin-right: 2rem;
+    }
+    .navegacion a:last-of-type{
+      margin:0;
+     }
+  }
+    .navegacion a:hover{
+      color:#13684A;
+    }
+    .site-footer{
+      background-color: #87e0fd;
+      margin: 0;
+    }
+    .contenedor-footer{
+      padding: 3rem 0;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .contenedor-footer{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    @media (min-width: 768px) {
+      .site-footer nav{
+        display: block;
+      }
+    }
+    .copyright{
+      margin: 0;
+      color:#3f4c6b;
+    }
