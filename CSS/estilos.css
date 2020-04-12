@@ -39,15 +39,20 @@ img{
 }
 .site-header{
   background-color: #1E5799;
-  padding: 1rem 0 3rem 0;
+  padding: 3rem 0 2rem 0;
+  
 
 }
+.logo {
+ width: 100%;
+ height: 20rem;
+}
 .site-header.inicio{
-  background-image: url(../imagenes/transformacion.jpg);
+  
   background-position: center center;
   background-size: cover;
-  height: 20vh;
-  min-height: 40rem;
+  height: 32rem;
+ 
 }
 .contenido-header{
   height: 100%;
@@ -68,11 +73,16 @@ img{
   .anuncio{
       border: 1px solid #B5B5B5;
       background-color: #3f4c6b;
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
       text-align: center;
+      
     }
   
   .contenido-anuncio{
+    padding: 2rem;
+  }
+  .certificado {
+    height: 40rem;
     padding: 2rem;
   }
 
@@ -81,7 +91,7 @@ img{
     text-align:right;
   }
 .navegacion a{
-    color: #1E5799;
+    color: #ffffff;
     text-decoration: none;
     font-size: 2.2rem; /** va ser igual a 18px*/
     display:block;
